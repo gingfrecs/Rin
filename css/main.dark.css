@@ -1,0 +1,97 @@
+
+/******************************************** MAIN PAGE ******************************************/
+.main {background-color: #000;}
+.main_list {
+    background-color: #000 ;
+    border-right: 2px solid #101820;
+}
+/************************** ABOUT SECTION *****************************/
+h3.headline:before {background-image: url("../rin-default/images/headline-dark.png");}
+.square {
+    background-color: #000;
+}
+.skills_info .line:first-of-type:after {color: #f5f6fa;}
+.skills_info .line:nth-of-type(2):after {color: #f5f6fa;}
+.skills_info .line:last-of-type:after {color: #f5f6fa;}
+.about_me div div div div div p {color: #f5f6fa;}
+.down_btn {
+    background-color: #f5f6fa;
+    color: #000;
+    border: 2px solid #f5f6fa;
+}
+.down_btn:hover {
+    color: #f5f6fa !important;
+    background-color: transparent;
+    border: 2px solid #f5f6fa !important;
+    font-weight: lighter;
+}
+.skills_counter div i {color: #f5f6fad6;}
+.fact_info {color: #f5f6fa;}
+
+/************************** SERVICES ***************************/
+.services {
+    background-color: #101820FF;
+    padding-bottom: 50px;
+}
+/************************** RESUME SECTION *****************************/
+.resume .res-title {color: #f5f6fa;}
+.resume .time-line-box {
+    background-color: #000;
+}
+.resume .time-line-box .t-l-contents .t-l-header h6 {color: #f5f6fa;}
+.resume .time-line-box .t-l-contents .t-l-header p {color: #f5f6fa;}
+.resume .time-line-box .t-l-contents .t-l-content { color: #f5f6fa;}
+.resume .time-line-box .t-l-icon {background-color: #ff4757;}
+.resume .time-line-box .t-l-contents::before {background-color: #ff4757;}
+
+/************************** WORKS SECTION *****************************/
+.works {
+    background: #101820FF;
+}
+.works .filter > li a {
+    color: #000;
+    background-color: #f5f6fa;
+    border: 2px solid #f5f6fa;
+}
+.works .filter > li a:hover {
+    color: #f5f6fa;
+    background-color: transparent;
+    border: 2px solid #f5f6fa;
+}
+.works .filter > li.active a {
+    color: #f5f6fa;
+    background-color: transparent;
+    border: 2px solid #f5f6fa;
+}
+
+/************************** BLOG SECTION *****************************/
+
+.blog-box {
+    background-color: #000;
+}
+.blog-box .blog-box-info {color: #f5f6fa !important;}
+.blog-box .blog-box-info p span {color: #ff4757;}
+.blog-box .blog-box-info a {
+    color: #ff4757;
+    text-decoration: none;
+}
+
+/************************** CONTACT SECTION *****************************/
+.contact {
+    background: #101820FF;
+}
+.contact .personal-info h4 {color: #f5f6fa;}
+.contact .personal-info .phone {color: #f5f6fa !important;}
+.contact .personal-info .email {color: #f5f6fa !important;}
+.contact .personal-info .location {color: #f5f6fa !important;}
+.contact-form .input-control {color: #f5f6fa;}
+.contact-form .submit-btn  {
+    background-color: #f5f6fa;
+    color: #000;
+    border: 2px solid #f5f6fa;
+}
+.contact-form .submit-btn:hover {
+    color: #f5f6fa;
+    background-color: transparent;
+    border: 2px solid #f5f6fa;
+}

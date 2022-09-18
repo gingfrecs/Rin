@@ -1,0 +1,372 @@
+
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+* {
+    scroll-behavior: smooth;
+    font-family: 'Nunito', sans-serif;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.overlay {
+    width: 100%;
+    background-color: #65656585;
+    height: 100%;
+    background-image: linear-gradient(to right, #ff000036 , #3b2d6740);
+    z-index: -2;
+}
+.bg {
+    background-image: url("../images/bg3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.cutbg {
+    position: absolute;
+    width: 101%;
+    bottom: -3px;
+    right: -1px;
+    z-index: 3;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! NAVBAR !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+nav {
+    height: 100px;
+    -webkit-transition: all ease-in-out .3s;
+    -moz-transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
+    -ms-transition: all ease-in-out .3s;
+    transition: all ease-in-out .3s;
+}
+
+.sec1 { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! LOGO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+ .my-navbar > div > a {   
+    letter-spacing: 4px;
+    font-family: 'Gudea', sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+ .my-navbar > div > a:hover { 
+    color: #1553;
+}
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! LIST BUTTON !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+ .my-navbar > div > button {
+    color: rgba(0,0,0,.5);
+    border: none;
+    margin-top: 5px;
+}
+ .my-navbar > div > button:focus{
+    outline: none;
+}
+ .my-navbar > div > button span {
+    width: 20px;
+    height: 2px;
+    display: block;
+    background-color: #fff;
+    margin-bottom: 4px;
+}
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! MAIN LIST !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    .my-navbar > div > div {
+        background-color: transparent;
+        -webkit-transition: all ease-in-out .1s;
+        -moz-transition: all ease-in-out .1s;
+        -o-transition: all ease-in-out .1s;
+        -ms-transition: all ease-in-out .1s;
+        transition: all ease-in-out .1s;
+     }
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! LIST !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.my-navbar div div ul {
+    position: relative;
+}
+.my-navbar div div ul li {
+    margin-right: 5px;
+}
+.my-navbar div div ul li a {
+    position: relative;
+    font-size: 0.9rem;
+    color: #fff;
+    text-align: center;
+    width: 60px;
+    margin: 0 auto;
+}
+.cotation_mark {
+    content: "";
+    background-color: red;
+    height: 2px;
+    width: 30px;
+    position: absolute;
+    bottom: 6px;
+    left: 9px;
+    -webkit-transition: all ease-in-out .6s;
+    -moz-transition: all ease-in-out .6s;
+    -o-transition: all ease-in-out .6s;
+    -ms-transition: all ease-in-out .6s;
+    transition: all ease-in-out .6s;
+}
+/* Section One  */
+ .intro {
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+ .intro > h1 {
+    color: #fff;
+    font-size: 4.5rem;
+}
+.intro > span {
+    display: flex;
+    justify-content: center;
+    font-size: 23px;
+    color: #fff;
+    width: 80%;
+    margin: 0 auto 20px;
+}
+.intro > span > .typed {
+    display: block;
+}
+ .intro > h1 span {font-weight: bold; display: inline-block;}
+ .intro > p {
+    font-size: 28px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+ .socials {
+    margin: 12px auto auto;
+    width: 200px;
+    height: 35px;
+
+}
+ .socials > a i {
+    color: #fff;
+    width: 15%;
+    height: 90%;
+    line-height: 31px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.socials > a:first-of-type i:hover {color: #3b5998;}
+.socials > a:nth-of-type(2) i:hover {color: #007bb6 ;}
+.socials > a:nth-of-type(3) i:hover {color: #dd4b39;}
+.socials > a:nth-of-type(4) i:hover {color: #00aced;}
+.socials > a:last-of-type i:hover {color: #fb3958;}
+ .intro > a {
+    display: block;
+    padding: 0;
+    border: none;
+    width: 63px;
+    height: 50px;
+    background-color: transparent;
+    margin: 0 auto;
+    cursor: pointer;
+    transform: translate(100px, 100px);
+    animation-name: yoyo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    bottom: -82px;
+    left: 44%;
+}
+ .intro > a span:first-of-type {
+    position: absolute;
+    top: 15px;
+    left: 9px;
+    display: block;
+    width: 28px;
+    height: 7px;
+    background-color: #fff;
+    border-radius: 33%;
+    margin: 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+ .intro > a span:nth-of-type(2) {
+    position: absolute;
+    top: 15px;
+    right: 9px;
+    display: block;
+    width: 28px;
+    height: 7px;
+    background-color: #fff;
+    border-radius: 33%;
+    margin: 0;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.upper {
+    text-transform: uppercase;
+}
+.forslider {
+    position: relative;
+}
+@media (max-width: 992px) {
+    
+    .my-navbar > div > div {
+        width: 60%;
+        background-color: #964F4CFF;
+        -webkit-transition: all ease-in-out .3s;
+        -moz-transition: all ease-in-out .3s;
+        -o-transition: all ease-in-out .3s;
+        -ms-transition: all ease-in-out .3s;
+        transition: all ease-in-out .3s;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        position: absolute;
+        top: 69px;
+        left: 51%;
+        -webkit-transform: translate(-50%, 0%);
+        -moz-transform: translate(-50%, 0%);
+        -o-transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, 0%);
+        transform: translate(-50%, 0%);
+    }
+    .collapse-color {
+        background-color: #fff !important;
+        width: 100% !important;
+        position: absolute;
+        top: 100% !important;
+        left: 50% !important;
+        -webkit-transform: translate(-50%, -1%) !important;
+        -moz-transform: translate(-50%, -1%) !important;
+        -o-transform: translate(-50%, -1%) !important;
+        -ms-transform: translate(-50%, -1%) !important;
+        transform: translate(-50%, -1%) !important;
+    }
+    .cotation_mark {  /* SECTION SELECTOR */
+        display: none;
+    }
+    .cotation_mark_col:before {display: none;}
+    .cotation_mark_col:after {display: none;}
+    .intro > h1 {font-size: 3.7rem;}
+}
+@media (max-width: 767px) {
+    .intro > h1 {font-size: 3rem;}
+    .intro > p {font-size: 17px;}
+    .footer .copyrights {
+        font-size: 0.5rem;
+    }
+}
+@media (max-width: 576px) {
+     .intro > h1 {font-size: 2.4rem;}
+     .intro > p {font-size: 15px;} 
+    .my-navbar div div ul li a {font-size: 0.7rem;}
+    .cotation_mark_col:before {
+        display: none;
+    }
+    .cotation_mark_col:after {
+        display: none;
+    }
+}
+@-webkit-keyframes yoyo {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+  }
+}
+@keyframes yoyo {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+/* FRAMEWORK */
+
+.m-color-red {
+    color: #e66767 !important;
+}
+.m-b-color-blue {
+    background-color: #3498db;
+}
+.m-b-color-red {
+    background-color: #3498db;
+}
+.m-color-blue {
+    color: #3498db !important;
+}
+.m-color-white {
+    color: #f5f6fa !important;
+}
+.m-b-color-red {
+    background-color: #f5f6fa   ;
+}
+
+
